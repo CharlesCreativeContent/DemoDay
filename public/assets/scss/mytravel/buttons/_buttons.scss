@@ -1,0 +1,123 @@
+/*------------------------------------
+  Buttons
+------------------------------------*/
+
+.btn {
+  &[href] {
+    cursor: pointer;
+  }
+
+  &:not([href]):not([type]):not(:disabled):not(.disabled) {
+    cursor: default;
+  }
+}
+
+label.btn {
+  cursor: pointer !important;
+}
+
+/* Pill */
+.btn-pill {
+  @include border-radius($border-radius-pill);
+}
+
+.btn-social {
+    color: $gray-1;
+    border-color: $gray-8;
+    border-width: 2px;
+    border-radius: $border-radius-pill;
+    height: $btn-height-wide-md !important;
+    width: $btn-width-wide-md !important;
+    &:hover{
+        color: $white;
+        background: $primary;
+        border-color: $primary;
+    }
+}
+
+.btn-social-dark {
+    color: $gray-1;
+    border-color: $gray-14;
+    border-width: 2px;
+    border-radius: $border-radius-pill;
+    height: $btn-height-wide-md !important;
+    width: $btn-width-wide-md !important;
+    &:hover{
+        color: $white;
+        background: $primary;
+        border-color: $primary;
+    }
+}
+
+/* Icon */
+.btn-icon {
+  position: relative;
+  line-height: 0;
+  font-size: $btn-icon-font-size;
+  width: $btn-width;
+  height: $btn-height;
+  padding: 0;
+
+  &__inner {
+    @include content-centered;
+
+    &-bottom-minus {
+      top: 80%;
+    }
+  }
+}
+
+/* Background Transparent */
+[class*="btn-soft-"].btn-bg-transparent {
+  background-color: transparent;
+}
+
+/* Toggle */
+.btn {
+  &__toggle {
+    &-default {
+      display: inline-block;
+    }
+
+    &-toggled {
+      display: none;
+    }
+  }
+
+  &.toggled {
+    .btn__toggle-default {
+      display: none;
+    }
+
+    .btn__toggle-toggled {
+      display: inline-block;
+    }
+  }
+}
+
+.close.close-rounded {
+    font-size: 0.75rem;
+    border: 1px solid $gray-11;
+    border-radius: 50%;
+    padding: 0.656rem;
+}
+
+.button-inline-group {
+    @each $breakpoint in map-keys($grid-breakpoints) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        &#{$infix} {
+            @include media-breakpoint-up($breakpoint) {
+                display: flex;
+
+                .btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+

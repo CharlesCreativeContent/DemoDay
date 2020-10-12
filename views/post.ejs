@@ -1,0 +1,15 @@
+<%- include('header'); -%>
+  <ul>
+  <% for(var i=0; i<posts.length; i++) {%>
+    <li>
+      <img src="../<%= posts[i].imgPath%>">
+      <span><%= posts[i].caption %></span>
+      <span><%= posts[i].likes %></span>
+      <span><i class="fa fa-heart" aria-hidden="true"></i></span>
+      <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+    </li>
+  <% } %>
+  </ul>
+  <a href="/profile">Return to Profile</a>
+  <a href="/feed">Return to Feed</a>
+<%- include('footer'); -%>

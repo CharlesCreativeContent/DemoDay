@@ -1,0 +1,55 @@
+/*------------------------------------
+  Content Centered
+------------------------------------*/
+
+.content-centered-y {
+  @include content-centered(false, true);
+}
+
+// Large Devices
+@include media-breakpoint-up(md) {
+	.content-centered-y--md {
+	  @include content-centered(false, true);
+	}
+}
+
+// Large Devices
+@include media-breakpoint-up(lg) {
+	.content-centered-y--lg {
+	  @include content-centered(false, true);
+	}
+}
+
+.flex-center-between { //display: flex; align-items: center; justify-content: space-between;
+    @include flex-center-between;
+}
+
+.flex-content-center { //display: flex; align-items: center; justify-content: center;
+    @include flex-content-center;
+}
+
+.flex-horizontal-center { // display: flex; align-items: center;
+    @include flex-horizontal-center;
+}
+
+/* Vertical Center Alignment */
+.position-absolute-center {
+	@include content-centered(true, true);
+}
+
+.position-50-horizontal {
+    @include media-breakpoint-up(xl) {
+        transform: translate(-35%, 0);
+        transition: $btn-transition;
+    }
+}
+
+.position-50-hover {
+    @include media-breakpoint-up(xl) {
+        &:hover {
+            .position-50-horizontal {
+                transform: translate(0, 0);
+            }
+        }
+    }
+}

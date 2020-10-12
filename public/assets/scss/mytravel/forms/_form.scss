@@ -1,0 +1,78 @@
+/*-------------------------------------------*\
+    2.18. Form Controls
+\*-------------------------------------------*/
+
+.custom-select:focus,
+.form-control:focus {
+  box-shadow: $form-focus-box-shadow;
+  border-color: $form-focus-border-color;
+}
+
+.form-control.text-white::placeholder {
+    color: $form-placholder-color;
+}
+
+.form-control.hero-form::placeholder {
+    color: $dark;
+}
+
+.u-header__search
+
+.form-label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 80%;
+  font-weight: 500;
+}
+
+/* Form Borderless */
+.input-group-borderless {
+    .form-control,
+    .input-group-text,
+    .form-control,
+    button,
+    .btn {
+        border: none;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+
+.input-group-radiusless {
+    .form-control,
+    .input-group-text,
+    .form-control,
+    button,
+    .btn {
+        border-radius: unset;
+    }
+}
+
+/* Form Transpatent */
+.input-group-tranparent {
+    .form-control,
+    .input-group-text,
+    button,
+    .btn {
+        background-color: transparent;
+    }
+
+    // .form-control:focus {
+    //     &,
+    //     + .input-group-append button,
+    //     + .input-group-append .btn {
+    //         background-color: rgba( $white, .3 ) !important;
+    //     }
+    // }
+}
+
+.placeholder-1::placeholder {
+    color: $gray-18;
+}
+
+.form-control {
+    @include border-radius($input-border-radius, 5px);
+    @include font-size($form-control-input-font-size);
+}

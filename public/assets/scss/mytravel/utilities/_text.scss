@@ -1,0 +1,340 @@
+/*------------------------------------
+Typography Font Size
+------------------------------------*/
+//$h1-font-size:                  $font-size-base * 2.5 !default;  //40px .font-size-4
+//$h2-font-size:                  $font-size-base * 2 !default;    //32px .font-size-3
+//$h3-font-size:                  $font-size-base * 1.75 !default; //28px
+//$h4-font-size:                  $font-size-base * 1.5 !default;  //24px .font-size-2
+//$h5-font-size:                  $font-size-base * 1.25 !default; //20px
+
+.font-size-1 {
+    font-size: ($font-size-base * .875); //14px
+}
+
+.font-size-2 {
+    font-size: ($font-size-base * 1.5); //24px
+}
+
+.font-size-3 {
+    font-size: ($font-size-base * 2); //32px
+}
+
+.font-size-4 {
+    font-size: ($font-size-base * 2.5); //40px
+}
+
+.font-size-5 {
+    font-size: ($font-size-base * 3); //48px
+}
+
+.font-size-8 {
+    font-size: 0.5rem;  //8px
+}
+
+.font-size-10 {
+    font-size: 0.625rem;  //10px
+}
+
+.font-size-11 {
+    font-size: 0.688rem; //11px
+}
+
+.font-size-21 {
+    font-size: 1.313rem; //21px
+}
+
+.font-size-12 {
+    font-size: 0.75rem;  //12px
+}
+
+.font-size-13 {
+    font-size: 0.813rem;  //13px
+}
+
+.font-size-14 {
+    font-size: 0.875rem;  //14px
+}
+
+.font-size-15 {
+    font-size: 0.938rem;  //15px
+}
+.font-size-16 {
+    font-size: 1rem;  //16px
+}
+
+.font-size-17 {
+    font-size: 1.063rem;  //17px
+}
+
+.font-size-18 {
+    font-size: 1.125rem; //18px
+}
+
+.font-size-19 {
+    font-size: 1.188rem; //19px
+}
+
+.font-size-20 {
+    font-size: 1.25rem; //20px
+}
+
+.font-size-21 {
+    font-size: 1.313rem;  //21px
+}
+
+.font-size-23 {
+    font-size: 1.438rem;  //24px
+}
+
+.font-size-24 {
+    font-size: 1.5rem;  //24px
+}
+
+.font-size-27 {
+    font-size: 1.688rem !important;  //27px
+}
+
+.font-size-30 {
+    font-size: 1.875rem; //30px
+}
+
+.font-size-35 {
+    font-size: 2.188rem;  //35px
+}
+
+.font-size-40 {
+    font-size: 2.5rem;  //40px
+}
+
+.font-size-50 {
+    font-size: 3.125rem;
+}
+
+.font-size-41 {
+    font-size: 2.563rem; //41px
+}
+
+.font-size-60 {
+    font-size: 3.75rem;
+}
+
+.font-size-22 {
+    font-size: 1.375rem; //22px
+}
+
+.font-size-lg-16 {
+    @include media-breakpoint-only(lg) {
+        font-size: 1rem; //14px
+    }
+}
+
+.font-size-25 {
+    font-size: 1.563rem; //25px
+}
+
+.font-size-80 {
+    font-size: 5rem; //80px
+}
+
+.font-size-xs-40 {
+    @include media-breakpoint-only(xs) {
+        font-size: 2.5rem !important; //40px
+    }
+}
+
+.font-size-xs-30 {
+    @include media-breakpoint-only(xs) {
+        font-size: 1.875rem !important; //14px
+    }
+}
+
+.font-size-xs-20 {
+    @include media-breakpoint-only(xs) {
+        font-size: 1.25rem; //20px
+    }
+}
+
+.font-size-xs-160 {
+    @include media-breakpoint-only(xs) {
+        font-size: 10rem !important; //160px
+    }
+}
+// Medium Devices
+@include media-breakpoint-down(md) {
+    .font-size-md-down-5 {
+        font-size: ($font-size-base * 3);
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .font-size-lg-15 {
+        font-size: 0.938rem;  //15px
+    }
+}
+
+.font-size-200 {
+    font-size: 12.5rem; //200px
+}
+
+@include media-breakpoint-only(lg) {
+    .font-size-lg-120 {
+        font-size: 7.5rem;  //120px
+    }
+}
+
+/*------------------------------------
+Font Weight
+------------------------------------*/
+.font-weight-medium {
+    font-weight: $font-weight-medium !important;
+}
+
+.font-weight-semi-bold {
+    font-weight: $font-weight-medium !important;
+}
+
+.font-weight-bold {
+    font-weight: $font-weight-medium !important;
+}
+
+// Small Devices
+@include media-breakpoint-down(xs) {
+    .font-size-xs-20 {
+        font-size: 1.25rem;  //20px
+    }
+}
+
+
+@include media-breakpoint-down(xs) {
+    .font-size-xs-28 {
+        font-size: 1.75rem !important;  //28px
+    }
+}
+/*------------------------------------
+Line Height
+------------------------------------*/
+
+.text-lh-sm {
+    line-height: 1.2;
+}
+
+.text-lh-md {
+    line-height: 1.8;
+}
+
+.text-lh-1 {
+    line-height: 1;
+}
+
+.text-lh-2 {
+    line-height: 2;
+}
+
+.text-lh-3 {
+    line-height: 3;
+}
+
+.text-lh-inherit {
+    line-height: 1.5;
+}
+
+.text-lh-1dot4 {
+    line-height: 1.4;
+}
+
+.text-lh-1dot6 {
+    line-height: 1.6;
+}
+
+.text-lh-1dot7 {
+    line-height: 1.7;
+}
+
+.text-lh-lg {
+    line-height: 1.9;
+}
+/*------------------------------------
+Letter Spacing
+------------------------------------*/
+
+.letter-spacing-2 {
+    letter-spacing: 0.125rem; //2px
+}
+
+.letter-spacing-3 {
+    letter-spacing: 0.188rem; //4px
+}
+
+
+
+/* section-title */
+.section-title {
+    font-size: 1.875rem; //30px
+    color: $dark;
+    font-weight: $font-weight-medium;
+
+    &::after {
+        display: block;
+        width: 2.5rem;
+        height: 0.125rem;
+        background-color: $primary;
+        content: " ";
+        margin: 1.5rem auto 0;
+    }
+}
+
+/* section-title */
+.section-title-1 {
+    font-size: 1.875rem; //30px
+    color: $white;
+    font-weight: $font-weight-bold;
+
+    &::after {
+        display: block;
+        width: 2.5rem;
+        height: 0.125rem;
+        background-color: $white;
+        content: " ";
+        margin: 1.5rem auto 0;
+    }
+}
+
+.color-hover {
+
+    &:hover {
+        background: $brown-lighter !important;
+
+        i,h6, {
+            color: #fff !important;
+        }
+
+    }
+}
+
+.text-hover {
+
+    &:hover {
+        background: $brown !important;
+
+        h6,span {
+            color: #fff !important;
+        }
+
+    }
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.line-clamp {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3.5;
+    -webkit-box-orient: vertical;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}

@@ -1,0 +1,27 @@
+/*------------------------------------
+  Header White Nav Links
+------------------------------------*/
+
+.u-header--dark-nav-links {
+    @each $breakpoint in map-keys($grid-breakpoints) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    &#{$infix} {
+            &:not(.bg-dark) {
+                @include media-breakpoint-up($breakpoint) {
+                    .u-header__nav-item {
+                        &:hover {
+                            .u-header__nav-link {
+                                color: $primary;
+                            }
+                        }
+                    }
+
+                    .u-header__nav-link {
+                        color: $dark;
+                    }
+                }
+            }
+        }
+    }
+}

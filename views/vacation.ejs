@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+      <title>Lucid</title>
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="../assets/css/main.css" />
+      <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+
+
+  </head>
+  <body>
+
+  <div class="container">
+
+      <div class="page-header text-center">
+          <h1><%= events[0].vacationName%></h1>
+          <h2><span class="fa fa-globe"></span> <%= events[0].localName%><h2>
+          <a href="/profile" class="btn btn-default btn-sm">Profile</a>
+          <a href="/feed" class="btn btn-default btn-sm">Global</a>
+          <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+      </div>
+
+      <div class="row">
+
+          <!-- LOCAL INFORMATION -->
+<input style="width:50.01%;margin: 0 auto;" type="text" name="query" placeholder="Search for Stuff" value="">
+<button style="width:50.01%;margin: 0 auto;" id="query">Query</button>
+          <div class="col-sm-6">
+            <h2>Events</h2>
+              <ul>
+              <% for(var i=0; i<events.length; i++) {%>
+                <li>
+                  <span class="events"><%= events[i].name %></span>
+                  <a href="/events/<%= events[i]._id%>"><button>Visit Event</button></a>
+                </li>
+              <% } %>
+              </ul>
+
+
+              <h2>Make a new event</h2>
+              <!-- IMAGE UPLOAD -->
+                <input type="text" name="event" placeholder="Name Event" value="">
+                <input type="datetime-local" name="dateTime" placeholder="" value="">
+                <input type="submit" value="+ New Event">
+
+
+
+         </div>
+       </div>
+  </div>
+
+  <footer>
+    <script src="../vacation.js"></script>
+    <script>
+      let id = '<%= id %>'
+      let latlon = `<%= events%>`
+    </script>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,572 @@
+/*------------------------------------
+  Width
+------------------------------------*/
+
+.min-width-3 {
+  min-width: 1rem !important;
+}
+
+.min-width-4 {
+  min-width: 1.5rem !important;
+}
+
+.min-width-200 {
+    min-width: 12.5rem;  //200px
+}
+
+.max-width-3 {
+  max-width: 1rem !important;
+}
+
+.max-width-4 {
+  max-width: 1.5rem !important;
+}
+
+.max-width-5 {
+  max-width: 2rem !important;
+}
+
+.max-width-6 {
+  max-width: 2.5rem !important;
+}
+
+.max-width-8 {
+  max-width: 3.5rem;
+}
+
+.max-width-9 {
+  max-width: 4rem;
+}
+
+.max-width-10 {
+  max-width: 4.5rem;
+}
+
+.max-width-15 {
+  max-width: 7rem;
+}
+
+.max-width-27 {
+  max-width: 13rem;
+}
+
+.max-width-35 {
+  max-width: 17rem;
+}
+
+.max-width-40 {
+  max-width: 19.5rem;
+}
+
+.max-width-40 {
+  max-width: 2.5rem;
+}
+
+.max-width-960 {
+    max-width: 60rem;
+
+    @include media-breakpoint-up(xl) {
+        min-width: 60rem;
+    }
+}
+
+.min-width-112 {
+    min-width: 7rem; //112px
+}
+
+.min-width-170 {
+    min-width: 10.625rem; //170px
+}
+
+.min-width-290 {
+    @include media-breakpoint-up(md) {
+        min-width: 18.125rem; //256px
+    }
+}
+
+.min-width-256 {
+    @include media-breakpoint-up(md) {
+        min-width: 16rem; //256px
+    }
+}
+
+.max-width-155 {
+    @include media-breakpoint-up(md) {
+        max-width: 9.6875rem !important; //155px
+    }
+}
+
+.min-width-130 {
+    min-width: 8.125rem;
+}
+
+.min-width-220 {
+    min-width: 13.75rem;
+}
+
+.min-width-220 {
+    min-width: 13.75rem;
+}
+
+.min-width-250 {
+    min-width: 15.625rem;
+}
+
+.min-width-284 {
+    min-width: 17.75rem;  //284px
+}
+
+.max-width-580 {
+    max-width: 36.25rem;  //580px
+}
+
+.width-200 {
+    width: 12.5rem;  //200px
+}
+
+.width-30 {
+    width: 1.875rem;
+}
+
+.max-width-235 {
+  max-width: 14.688rem; //235px
+}
+
+.min-width-178 {
+    min-width: 11.125rem; //178px
+}
+
+.min-width-300 {
+    min-width: 18.75rem;
+}
+
+.w-max {
+    @each $breakpoint in map-keys($grid-breakpoints) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        &#{$infix}-100 {
+            @include media-breakpoint-down($breakpoint) {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+.min-width-254 {
+    min-width: 15.875rem;
+}
+
+// Extra Large Devices
+@include media-breakpoint-up(xl) {
+  .min-width-xl-447 {
+    min-width: 27.938rem;  //447px
+  }
+}
+
+.width-51 {
+  width: 3.188rem;  //51px
+}
+
+.width-135 {
+  width: 8.438rem !important;  //135px
+}
+
+.width-25 {
+  width: 1.563rem;  //25px
+}
+
+.width-35 {
+  width: 2.188rem;  //35px
+}
+
+.width-36 {
+  width: 36px;
+}
+
+.width-40 {
+  width: 2.5rem;  //40px
+}
+
+.width-45 {
+  width: 2.813rem;
+}
+
+.width-50 {
+  width: 3.125rem;  //50px
+}
+
+.width-80 {
+  width: 5rem; //80px
+}
+
+.width-90 {
+  width: 5.625rem; //90px
+}
+
+.width-223 {
+  width: 13.875rem !important; //223px
+}
+
+.width-100vw {
+    width: 100vw;
+}
+
+.min-width-xl-100 {
+    @include media-breakpoint-up(xl) {
+        min-width: 100%;
+    }
+}
+
+.max-width-650 {
+  max-width: 38.125rem;  //650px
+}
+
+.max-width-810 {
+  max-width: 50.625rem;  //810px
+}
+
+.width-260 {
+  width: 16.25rem; //260px
+}
+
+@include media-breakpoint-only(lg) {
+  .width-lg-200 {
+    width: 12.5rem !important;  //250pxpx
+  }
+}
+
+.width-60 {
+  width: 3.75rem; //60px
+}
+
+.max-height-200 {
+  max-height: 12.5rem; //200px
+}
+
+.width-70 {
+  width: 4.375rem; //70px
+}
+
+.width-190 {
+  width: 11.875rem; //190px
+}
+
+.width-960 {
+    @include media-breakpoint-up(wd) {
+        width: 60rem; //960px
+    }
+}
+
+.min-width-190 {
+  min-width: 11.875rem; //190px
+}
+
+/*------------------------------------
+  Height
+------------------------------------*/
+.height-30vh {
+  height: 30vh;
+}
+
+.height-40vh {
+  height: 40vh;
+}
+
+.height-60vh {
+  height: 60vh;
+}
+
+.height-100vh {
+  height: 100vh;
+}
+
+.height-570 {
+    height: 35.625rem;
+}
+
+.height-100vh-72 {
+    height: calc(100vh - 72px);
+}
+
+.height-100vh-main {
+    @include media-breakpoint-up(lg) {
+        height: calc(100vh - 194px);
+    }
+
+    @include media-breakpoint-up(xl) {
+        height: calc(100vh - 214px);
+    }
+}
+
+.height-100vh-main-1 {
+
+  @include media-breakpoint-up(lg) {
+      height: calc(100vh - 80px);
+  }
+}
+
+.height-100vh-main-2 {
+
+  @include media-breakpoint-up(lg) {
+      height: calc(100vh - 155px);
+  }
+}
+
+.height-4 {
+  height: .25rem;
+}
+
+.height-25 {
+  height: 1.563rem;  //25px
+}
+
+.height-35 {
+  height: 2.188rem;  //35px
+}
+
+.height-36 {
+  height: 36px;
+}
+
+.height-40 {
+  height: 2.5rem;  //40px
+}
+
+.height-45 {
+    height: 2.813rem;
+}
+
+.height-50 {
+  height: 3.125rem;  //50px
+}
+
+.height-51 {
+  height: 3.188rem;  //51px
+}
+
+.height-54 {
+  height: 54px;
+}
+
+.height-60 {
+  height: 3.75rem; //60px
+}
+
+.min-height-60 {
+  min-height: 3.75rem; //60px
+}
+
+.height-380 {
+  height: 23.75rem;
+}
+
+.height-350-md-down {
+    @include media-breakpoint-down(md) {
+        height: 21.875rem;
+    }
+}
+
+.height-400 {
+  height: 25rem;
+}
+
+.height-450 {
+  height: 28.125rem !important;
+}
+
+.max-height-100vh {
+    max-height: 100vh;
+}
+
+.min-height-100vh {
+  min-height: 100vh;
+}
+
+.min-height-50 {
+  min-height: 3.125rem;
+}
+
+.min-height-155 {
+  min-height: 9.6875rem;
+}
+
+.min-height-200 {
+  min-height: 12.5rem;  //200px
+}
+
+.min-height-230 {
+  min-height: 14.375rem; //230px
+}
+
+.min-height-240 {
+  min-height: 15rem; //240px
+}
+
+.min-height-350 {
+  min-height: 21.875rem !important; //350PX
+}
+
+.min-height-300 {
+  min-height: 18.75rem;
+}
+
+.min-height-380 {
+  min-height: 23.75rem;
+}
+
+.min-height-450 {
+  min-height: 28.125rem;
+}
+
+.min-height-458 {
+    @include media-breakpoint-up(md) {
+        min-height: 28.625rem;
+        object-fit: cover;
+    }
+}
+
+.min-height-150 {
+    @include media-breakpoint-up(md) {
+        min-height: 9.375rem;
+        object-fit: cover;
+    }
+}
+
+.min-height-500 {
+  min-height: 31.25rem;
+}
+
+.min-height-550 {
+  min-height: 34.375rem;
+}
+
+.min-height-600 {
+  min-height: 37.5rem;
+}
+
+.min-height-620 {
+  min-height: 38.75rem;
+}
+
+.min-height-650 {
+  @include media-breakpoint-down(lg) {
+        min-height: 25rem;
+    }
+    @include media-breakpoint-up(xl) {
+        min-height: 40.625rem;
+    }
+}
+
+.min-height-750 {
+    @include media-breakpoint-down(lg) {
+        min-height: 30rem;
+    }
+    @include media-breakpoint-up(xl) {
+        min-height: 46.875rem;
+    }
+}
+
+.min-height-800 {
+    @include media-breakpoint-down(lg) {
+        min-height: 30rem;
+    }
+    @include media-breakpoint-up(xl) {
+        min-height: 50rem;
+    }
+}
+
+.min-height-720 {
+    @include media-breakpoint-down(md) {
+        min-height: 26rem;
+    }
+    @include media-breakpoint-up(lg) {
+        min-height: 45rem;
+    }
+}
+
+.min-height-955 {
+     @include media-breakpoint-down(lg) {
+        min-height: 30rem;
+    }
+    @include media-breakpoint-up(xl) {
+        min-height: 59.688rem;
+    }
+}
+
+.min-height-960 {
+     @include media-breakpoint-down(xl) {
+        min-height: 32rem;
+    }
+    @include media-breakpoint-up(xxl) {
+        min-height: 60rem;
+    }
+}
+
+.max-height-760 {
+    max-height: 47.5rem;
+}
+
+.height-760 {
+    @include media-breakpoint-up(wd) {
+        height: 47.5rem;
+    }
+}
+
+// Small Devices
+@include media-breakpoint-up(sm) {
+  .height-sm-100vh {
+    height: 100vh;
+  }
+}
+
+// Medium Devices
+@include media-breakpoint-up(md) {
+  .height-md-60vh {
+    height: 60vh;
+  }
+
+  .height-md-100vh {
+    height: 100vh;
+  }
+
+  .min-height-md-100vh {
+    min-height: 100vh;
+  }
+}
+
+// Large Devices
+@include media-breakpoint-up(lg) {
+  .height-lg-100vh {
+    height: 100vh;
+  }
+
+  .min-height-lg-auto {
+    min-height: auto;
+  }
+
+  .min-height-lg-100vh {
+    min-height: 100vh;
+  }
+}
+
+// Extra Large Devices
+@include media-breakpoint-up(xl) {
+  .min-height-xl-100vh {
+    min-height: 100vh;
+  }
+}
+
+.height-110 {
+    height: 110px;
+    object-fit: cover;
+}
+
+@include media-breakpoint-up(md) {
+  .width-md-50 {
+    width: 50%;
+  }
+}
+
+.m-b-n1 {
+    margin-bottom: -1px;
+}

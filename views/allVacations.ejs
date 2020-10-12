@@ -1,0 +1,28 @@
+<%- include('header'); -%>
+  <div class="container">
+
+      <div class="page-header text-center">
+          <h1><span class="fa fa-globe"></span>World Vacations</h1>
+          <a href="/profile" class="btn btn-default btn-sm">Profile</a>
+          <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+      </div>
+
+      <div class="row">
+
+          <!-- LOCAL INFORMATION -->
+
+          <div class="col-sm-6">
+              <ul>
+              <% for(var i=0; i<vacations.length; i++) {%>
+                <li>
+                  <span class="vacation"><%= vacations[i].name %></span>
+                  <span> in <%= vacations[i].localName %></span>
+                  <a href="/vacation/<%= vacations[i]._id %>"><button>Visit Vacation</button></a>
+                </li>
+              <% } %>
+              </ul>
+
+         </div>
+       </div>
+  </div>
+<%- include('footer'); -%>

@@ -1,0 +1,185 @@
+/*------------------------------------
+  Borders
+------------------------------------*/
+
+// Default options
+.rounded-pill {
+	@include border-radius($border-radius-pill);
+}
+
+.rounded-xs {
+	@include border-radius($border-radius-xs);
+}
+
+.rounded-top-pill {
+	@include border-top-radius($border-radius-pill);
+}
+
+.rounded-right-pill {
+	@include border-right-radius($border-radius-pill);
+}
+
+.rounded-bottom-pill {
+	@include border-bottom-radius($border-radius-pill);
+}
+
+.rounded-left-pill {
+	@include border-left-radius($border-radius-pill);
+}
+
+// Custom options
+.rounded-top-left-pill {
+	@include border-top-left-radius($border-radius-pill);
+}
+
+.rounded-bottom-left-pill {
+	@include border-bottom-left-radius($border-radius-pill);
+}
+
+// Pseudo options
+.rounded-pseudo {
+	@include border-radius($border-radius);
+
+	&::before,
+	&::after {
+		@include border-radius($border-radius);
+	}
+}
+
+.rounded-top-pseudo {
+	@include border-top-radius($border-radius);
+
+	&::before,
+	&::after {
+		@include border-top-radius($border-radius);
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.border-xl-0        { border: 0 !important; }
+	.border-xl-top-0    { border-top: 0 !important; }
+	.border-xl-right-0  { border-right: 0 !important; }
+	.border-xl-bottom-0 { border-bottom: 0 !important; }
+	.border-xl-left-0   { border-left: 0 !important; }
+
+	.border-xl         { border: $border-width solid $border-color !important; }
+	.border-xl-top     { border-top: $border-width solid $border-color !important; }
+	.border-xl-right   { border-right: $border-width solid $border-color !important; }
+	.border-xl-bottom  { border-bottom: $border-width solid $border-color !important; }
+	.border-xl-left    { border-left: $border-width solid $border-color !important; }
+}
+
+@include media-breakpoint-up(lg) {
+	.border-lg-0        { border: 0 !important; }
+	.border-lg-top-0    { border-top: 0 !important; }
+	.border-lg-right-0  { border-right: 0 !important; }
+	.border-lg-bottom-0 { border-bottom: 0 !important; }
+	.border-lg-left-0   { border-left: 0 !important; }
+
+	.border-lg         { border: $border-width solid $border-color !important; }
+	.border-lg-top     { border-top: $border-width solid $border-color !important; }
+	.border-lg-right   { border-right: $border-width solid $border-color !important; }
+	.border-lg-bottom  { border-bottom: $border-width solid $border-color !important; }
+	.border-lg-left    { border-left: $border-width solid $border-color !important; }
+}
+
+// Border color
+.border-color-white {
+	border-color: rgba( $white, 0.149 ) !important;
+}
+
+.border-color-3 {
+	border-color: $gray-3; //#e4e4e4
+}
+
+.border-color-1 {
+	border-color: $gray-2 !important;  //#eaeaea
+}
+
+.border-color-7 {
+	border-color: $gray-7 !important; //#e4e4e4
+}
+
+.border-color-8 {
+	border-color: $gray-8 !important; //#ebf0f7
+}
+
+.border-color-13 {
+	border-color: $gray-13 !important;
+}
+
+.border-color-11 {
+	border-color: $gray-11 !important; //#dce3ec
+}
+
+.border-color-2 {
+	border-color: $gray-1; //#67747c
+}
+
+.border-color-14 {
+	border-color: $gray-14 !important;
+}
+
+
+.border-lg-bottom {
+	@include media-breakpoint-up(lg) {
+		border-bottom: 1px solid #ebf0f7;
+	}
+}
+.destination {
+    position: relative;
+    &::after {
+        content: '';
+        height: 1px;
+        width: 50px;
+        background-color: $white;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+    }
+}
+
+.border-width-2 {
+	border-width: 2px !important;
+}
+
+.border-width-3 {
+	border-width: 3px !important;
+}
+
+.rounded-border {
+	@include border-radius($border-rounded-radius);
+
+	&::before,
+	&::after {
+		@include border-radius($border-rounded-radius);
+	}
+}
+
+.border-radius-2 {
+	border-radius: 2px !important;
+}
+
+.border-radius-3 {
+	border-radius: 3px !important;
+}
+
+.border-radius-5 {
+	border-radius: 5px !important;
+}
+
+.border-bottom {
+	@each $breakpoint in map-keys($grid-breakpoints) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+	    @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+	      	&#{$infix} {
+	      		border-bottom: 1px solid $gray-8;
+	      	}
+	    }
+    }
+}
+
+.border-bottom-1 {
+	border-bottom: 2px solid $gray-25 !important;
+}

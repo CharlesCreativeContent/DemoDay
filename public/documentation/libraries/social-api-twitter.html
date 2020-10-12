@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Twitter | Social API - MyTravel Documentation | MyTravel - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../../favicon.png">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
+  <link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="../../documentation/assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+  <link rel="stylesheet" href="../../documentation/assets/vendor/prism/prism.css">
+
+  <!-- CSS MyTravel Template -->
+  <link rel="stylesheet" href="../../assets/css/theme.css">
+
+  <!-- CSS MyTravel Doc -->
+  <link rel="stylesheet" href="../../documentation/assets/css/docs.css">
+</head>
+<body>
+  <!-- Twitter Library -->
+  <script src="//platform.twitter.com/widgets.js" charset="utf-8" async></script>
+
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="u-header u-header--starter">
+    <nav id="logoAndNav" class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
+      <div class="col-md-4 col-lg-3 col-xl-2 bg-md-primary-darker navbar-brand u-header__navbar-brand u-header__navbar-brand-center mr-0 py-3">
+          <!-- Logo -->
+          <a class="navbar-brand u-header__navbar-brand-default u-header__navbar-brand-center u-header__navbar-brand-text-white mr-0" href="../index.html" aria-label="MyTravel">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="32px" style="margin-bottom: 0;">
+                  <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                   d="M32.872,30.917 C31.376,32.369 28.961,32.359 27.477,30.896 L25.201,28.670 C24.961,28.427 24.961,28.041 25.201,27.798 C25.447,27.549 25.853,27.542 26.108,27.783 L28.384,30.009 C29.366,30.941 30.928,30.941 31.910,30.009 C32.914,29.057 32.938,27.489 31.965,26.507 L30.971,25.534 C30.731,25.291 30.731,24.906 30.971,24.663 C31.217,24.414 31.623,24.407 31.878,24.648 L32.871,25.620 C32.879,25.627 32.886,25.634 32.893,25.641 C34.377,27.104 34.367,29.467 32.872,30.917 ZM29.584,22.583 C29.522,22.583 29.461,22.574 29.402,22.557 C29.402,22.557 29.402,22.557 29.401,22.557 C29.062,22.458 28.869,22.109 28.970,21.777 C30.008,18.362 29.512,14.677 27.608,11.641 C23.902,5.734 16.002,3.884 9.963,7.508 C9.944,7.521 9.924,7.532 9.904,7.543 C9.593,7.709 9.203,7.596 9.034,7.292 C8.865,6.988 8.980,6.607 9.291,6.442 C11.512,5.105 14.070,4.398 16.679,4.400 C18.037,4.401 19.388,4.594 20.690,4.972 C28.162,7.143 32.419,14.828 30.199,22.136 C30.117,22.401 29.868,22.583 29.584,22.583 ZM8.532,4.843 L7.891,4.216 C7.651,3.974 7.651,3.588 7.891,3.345 C8.137,3.096 8.543,3.089 8.798,3.330 L9.439,3.957 C9.679,4.200 9.679,4.585 9.439,4.828 C9.193,5.077 8.787,5.084 8.532,4.843 ZM5.968,2.335 L5.615,1.990 C4.633,1.058 3.071,1.058 2.089,1.990 C1.085,2.943 1.060,4.510 2.034,5.492 L6.233,9.600 C6.354,9.718 6.421,9.877 6.421,10.043 C6.421,10.389 6.134,10.670 5.780,10.670 C5.610,10.670 5.447,10.604 5.327,10.486 L1.128,6.380 C1.120,6.372 1.113,6.365 1.106,6.358 C-0.378,4.895 -0.368,2.533 1.127,1.082 C2.623,-0.369 5.038,-0.360 6.522,1.103 L6.874,1.449 C6.880,1.454 6.885,1.459 6.890,1.464 C7.136,1.713 7.129,2.110 6.874,2.351 C6.620,2.591 6.214,2.584 5.968,2.335 ZM4.786,11.985 C5.106,12.133 5.242,12.507 5.090,12.820 C3.234,16.652 3.483,21.142 5.752,24.755 C9.459,30.659 17.358,32.507 23.395,28.881 C23.414,28.868 23.434,28.856 23.454,28.845 C23.765,28.680 24.154,28.792 24.324,29.096 C24.493,29.401 24.378,29.781 24.067,29.947 C21.845,31.284 19.287,31.990 16.679,31.988 C14.593,31.987 12.532,31.534 10.647,30.661 C3.603,27.399 0.597,19.171 3.932,12.282 C4.084,11.969 4.466,11.836 4.786,11.985 ZM24.890,21.342 C25.099,21.301 25.315,21.366 25.466,21.513 L26.749,22.767 C26.999,23.012 26.999,23.409 26.749,23.654 L24.450,25.902 C22.991,27.329 20.625,27.329 19.166,25.902 L15.397,22.216 L13.286,24.281 C13.035,24.525 12.629,24.525 12.379,24.281 L11.097,23.026 C10.954,22.886 10.887,22.687 10.917,22.491 L11.513,18.415 L7.783,14.768 C6.825,13.831 6.825,12.311 7.783,11.374 C8.741,10.436 10.295,10.436 11.254,11.374 L14.884,14.923 L22.162,11.363 C22.409,11.243 22.707,11.290 22.902,11.481 L24.184,12.735 C24.435,12.980 24.435,13.377 24.184,13.621 L18.868,18.821 L22.021,21.903 L24.890,21.342 ZM12.832,22.951 L14.490,21.329 L12.644,19.524 L12.230,22.361 L12.832,22.951 ZM21.353,23.026 L17.506,19.264 C17.256,19.020 17.256,18.623 17.506,18.378 L22.823,13.178 L22.321,12.687 L15.042,16.247 C14.795,16.368 14.497,16.320 14.302,16.129 L10.345,12.260 C10.125,12.045 9.827,11.924 9.516,11.924 C8.869,11.925 8.344,12.438 8.345,13.071 C8.343,13.376 8.466,13.668 8.686,13.884 L12.641,17.752 L15.847,20.887 L20.068,25.015 C21.027,25.953 22.581,25.953 23.539,25.015 L25.385,23.210 L24.798,22.637 L21.930,23.198 C21.720,23.238 21.504,23.174 21.353,23.026 Z"/>
+              </svg>
+                <span class="u-header__navbar-brand-text">MyTravel</span>
+          </a>
+          <!-- End Logo -->
+          <a class="small ml-2" href="../getting-started/changelog.html">
+            <span class="badge badge-white">v1.0</span>
+          </a>
+    </div>
+
+      <!-- Header Search -->
+      <form class="form-inline input-group input-group-sm input-group-borderless d-none d-md-flex mr-auto ml-md-4" style="max-width: 500px;">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="docsSearch">
+            <span class="fas fa-search"></span>
+          </span>
+        </div>
+        <input class="js-hs-docs-search form-control pl-0" type="text" placeholder="Search..." aria-label="Search..." aria-describedby="docsSearch" data-url="../assets/ajax/autocomplete-data-for-documentation-search.json">
+      </form>
+      <!-- End Header Search -->
+
+      <!-- Header Links -->
+      <ul class="navbar-nav u-header--starter text-nowrap flex-row align-items-center px-3 ml-0 ml-sm-3">
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#" title="Video Tuts" target="_blank">
+            <span class="fab fa-youtube mr-sm-1"></span>
+            <span class="d-none d-lg-inline-block">Video Tuts</span>
+          </a>
+        </li> -->
+        <li class="nav-item ml-4">
+          <a class="nav-link" href="../../starter/index.html" title="Start Building">
+            <span class="fas fa-th mr-sm-1"></span>
+            <span class="d-none d-lg-inline-block">Start Building</span>
+          </a>
+        </li>
+        <li class="nav-item ml-3 ml-sm-5">
+          <a class="btn btn-sm btn-light text-primary" href="../../html/home/index.html" title="Live Preview">
+            <span class="far fa-eye mr-sm-1"></span>
+            <span class="d-none d-lg-inline-block">Live Preview</span>
+          </a>
+        </li>
+      </ul>
+      <!-- End Header Links -->
+    </nav>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <nav class="col-md-4 col-lg-3 col-xl-2 bg-light hs-sidebar navbar-expand-md">
+        <div class="d-flex d-md-none justify-content-between mb-3">
+          <!-- Sidebar Search -->
+          <form class="col form-inline input-group-sm">
+            <input class="js-hs-docs-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../assets/ajax/autocomplete-data-for-documentation-search.json">
+          </form>
+          <!-- End Sidebar Search -->
+
+          <!-- Responsive Toggle Button -->
+          <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+              <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+            </svg>
+          </button>
+          <!-- End Responsive Toggle Button -->
+        </div>
+
+        <!-- Sidebar Nav -->
+        <div class="collapse navbar-collapse" id="sidebar-nav">
+          <div id="sidebarNav" class="js-scrollbar hs-sidebar-sticky">
+            <h5 class="hs-sidebar__heading">Getting started</h5>
+            <ul class="hs-sidebar__nav">
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../index.html">Introduction</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../getting-started/file-structures.html">File structures</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../getting-started/gulp.html">Gulp</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../getting-started/customization.html">Customization</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../getting-started/credits.html">Credits</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../getting-started/changelog.html">Changelog</a></li>
+            </ul>
+
+            <h5 class="hs-sidebar__heading">Content</h5>
+            <ul class="hs-sidebar__nav">
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../content/typography.html">Typography</a></li>
+              <li class="hs-sidebar__item">
+                <span class="hs-sidebar__link">Icons:</span>
+                <ul class="hs-sidebar__nav ml-2">
+                  <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../content/exclusive-svg.html">Exclusive SVG set</a></li>
+                  <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../content/font-awesome.html">Font Awesome</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <h5 class="hs-sidebar__heading">Components</h5>
+            <ul class="hs-sidebar__nav">
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../components/alerts.html">Alerts</a></li>
+
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../components/badge.html">Badge</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../components/breadcrumb.html">Breadcrumb</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../components/buttons.html">Buttons</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../components/cards.html">Cards</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../components/collapse.html">Collapse</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../components/forms.html">Forms</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../components/list-group.html">List group</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../components/navs.html">Navs</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../components/pagination.html">Pagination</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../components/progress.html">Progress</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../components/spinners.html">Spinners</a></li>
+
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../components/tables.html">Tables</a></li>
+            </ul>
+
+            <h5 class="hs-sidebar__heading">Utilities</h5>
+            <ul class="hs-sidebar__nav">
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../utilities/borders.html">Borders</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../utilities/colors.html">Colors</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../utilities/content-alignments.html">Content alignments (with position)</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../utilities/links.html">Links</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../utilities/position.html">Position</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../utilities/shadows.html">Shadows</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../utilities/sizing.html">Sizing</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../utilities/spacing.html">Spacing</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../utilities/transform.html">Transform</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../utilities/transitions.html">Transitions</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../utilities/others.html">Others</a></li>
+            </ul>
+
+            <h5 class="hs-sidebar__heading">HS Libraries</h5>
+            <ul class="hs-sidebar__nav">
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../hs-libraries/background-video.html">Background video</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../hs-libraries/unfold.html">Unfold (Dropdown and others)</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../hs-libraries/file-attach.html">File attach</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../hs-libraries/go-to.html">Go-to</a></li>
+
+
+
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../hs-libraries/header-searches.html">Header searches</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../hs-libraries/page-preloader.html">Page preloader</a></li>
+
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../hs-libraries/scroll-nav.html">Scroll nav</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../hs-libraries/show-animation.html">Show animation</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../hs-libraries/step-form.html">Step form (Wizards)</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../hs-libraries/sticky-block.html">Sticky block</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="../hs-libraries/toggle-state.html">Toggle state</a></li>
+            </ul>
+
+            <h5 class="hs-sidebar__heading">Other Libraries</h5>
+            <ul class="hs-sidebar__nav">
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="animations.html">Animations</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="bootstrap-select.html">Bootstrap select</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="bootstrap-tagsinput.html">Bootstrap tagsinput</a></li>
+              <li class="hs-sidebar__item">
+                <span class="hs-sidebar__link">Charts:</span>
+                <ul class="hs-sidebar__nav ml-2 mb-0">
+                  <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="area-chart.html">Area chart</a></li>
+                  <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="bar-chart.html">Bar chart</a></li>
+                </ul>
+              </li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="circles.html">Circles (Pie chart)</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="clipboard.html">Clipboard</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="countdown.html">Countdown</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="counters.html">Counters</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="cubeportfolio.html">Cubeportfolio</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="datatables.html">Datatables</a></li>
+
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="fancybox.html">Fancybox</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="flatpickr.html">Flatpickr</a></li>
+
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="malihu-scrollbar.html">Malihu scrollbar</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="modal-window.html">Modal window</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="parallax.html">Parallax</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="password-strength.html">Password strength</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="range-slider.html">Range slider</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="slick-carousel.html">Slick carousel</a></li>
+              <li class="hs-sidebar__item">
+                <span class="hs-sidebar__link">Social APIs:</span>
+                <ul class="hs-sidebar__nav ml-2 mb-0">
+                  <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="social-api-instagram.html">Instagram</a></li>
+                  <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="social-api-facebook.html">Facebook</a></li>
+                  <li class="hs-sidebar__item"><a class="hs-sidebar__link active" href="social-api-twitter.html">Twitter</a></li>
+                </ul>
+              </li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="summernote.html">Summernote WYSIWYG</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="svg.html">SVG</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="typedjs.html">Typed.js</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="validation.html">Validation</a></li>
+              <li class="hs-sidebar__item"><a class="hs-sidebar__link" href="video-player.html">Video player</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- End Sidebar Nav -->
+      </nav>
+      <!-- End Sidebar -->
+
+      <main class="col-md-8 col-lg-9 col-xl-10 px-4 pt-0 pt-md-11 pb-7 ml-md-auto">
+        <div class="row">
+          <!-- Section Nav -->
+          <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block">
+            <ul class="js-scroll-nav hd-doc-section-nav">
+              <li class="hd-doc-section-nav-item active"><a href="#how-to-use">How to use?</a></li>
+              <li class="hd-doc-section-nav-item">
+                <a href="#twitter-examples">Examples</a>
+                <ul>
+                  <li class="hd-doc-section-nav-item"><a href="#timeline">Timeline</a></li>
+                  <li class="hd-doc-section-nav-item"><a href="#card">Card</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- End Section Nav -->
+
+          <div class="col-xl-10 order-xl-1">
+            <div class="hs-docs-content-divider">
+              <h1>Twitter API</h1>
+              <p class="lead">Twitter API can be used to build non-automated, authentic, high-quality demonstrative blocks.</p>
+            </div>
+
+            <blockquote class="callout callout-warning">
+              <p class="callout-title">Official documentation</p>
+              <p>For more detailed information and examples, see the official documentation: <a href="https://dev.twitter.com/web/overview" target="_blank">Twitter developer documentation <small class="fas fa-external-link-alt"></small></a>.</p>
+            </blockquote>
+
+            <div id="how-to-use" class="hs-docs-content-divider">
+              <h2 class="hs-docs-heading h4">How to use? <a class="anchorjs-link" href="#how-to-use" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+              <p>Include this script right after open <code class="highlighter-rouge">&lt;body&gt;</code> tag.</p>
+              <pre>
+                <code class="language-markup" data-lang="html">
+                  &lt;body&gt;
+                    &lt;script src="//platform.twitter.com/widgets.js" charset="utf-8" async&gt;&lt;/script&gt;
+                  &lt;/body&gt;
+                </code>
+              </pre>
+            </div>
+
+            <div id="twitter-examples">
+              <h2 class="hs-docs-heading h4">Examples <a class="anchorjs-link" href="#twitter-examples" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            </div>
+
+            <div id="timeline" class="hs-docs-content-divider">
+              <h2 class="hs-docs-heading h4">Timeline <a class="anchorjs-link" href="#timeline" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+              <div class="mb-3">
+                <!-- Nav Classic -->
+                <ul class="nav nav-classic nav-borderless" id="pills-tab-7" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="pills-result-tab-7" data-toggle="pill" href="#pills-result-7" role="tab" aria-controls="pills-result-7" aria-selected="true">Result</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-html-tab-7" data-toggle="pill" href="#pills-html-7" role="tab" aria-controls="pills-html-7" aria-selected="false">HTML</a>
+                  </li>
+                </ul>
+                <!-- End Nav Classic -->
+
+                <!-- Tab Content -->
+                <div class="tab-content bg-light" id="pills-tabContent-7">
+                  <div class="tab-pane fade p-4 show active" id="pills-result-7" role="tabpanel" aria-labelledby="pills-result-tab-7">
+                    <div style="overflow: auto; height: 300px;">
+                      <a class="twitter-timeline" href="https://twitter.com/Twitter">Tweets by Twitter</a>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-html-7" role="tabpanel" aria-labelledby="pills-html-tab-7">
+                    <pre>
+                      <code class="language-markup" data-lang="html">
+                        &lt;div style="overflow: auto; height: 300px;"&gt;
+                          &lt;a class="twitter-timeline" href="https://twitter.com/Twitter"&gt;Tweets by Twitter&lt;/a&gt;
+                        &lt;/div&gt;
+                      </code>
+                    </pre>
+                  </div>
+                </div>
+                <!-- End Tab Content -->
+              </div>
+            </div>
+
+            <div id="card" class="hs-docs-content-divider">
+              <h2 class="hs-docs-heading h4">Card <a class="anchorjs-link" href="#card" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+              <div class="mb-3">
+                <!-- Nav Classic -->
+                <ul class="nav nav-classic nav-borderless" id="pills-tab-8" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="pills-result-tab-8" data-toggle="pill" href="#pills-result-8" role="tab" aria-controls="pills-result-8" aria-selected="true">Result</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-html-tab-8" data-toggle="pill" href="#pills-html-8" role="tab" aria-controls="pills-html-8" aria-selected="false">HTML</a>
+                  </li>
+                </ul>
+                <!-- End Nav Classic -->
+
+                <!-- Tab Content -->
+                <div class="tab-content bg-light" id="pills-tabContent-8">
+                  <div class="tab-pane fade p-4 show active" id="pills-result-8" role="tabpanel" aria-labelledby="pills-result-tab-8">
+                    <blockquote class="twitter-tweet" data-lang="en-gb">
+                      <a href="https://twitter.com/Twitter/status/1227039932805517313"></a>
+                    </blockquote>
+                  </div>
+                  <div class="tab-pane fade" id="pills-html-8" role="tabpanel" aria-labelledby="pills-html-tab-8">
+                    <pre>
+                      <code class="language-markup" data-lang="html">
+                        &lt;blockquote class="twitter-tweet" data-lang="en-gb"&gt;
+                          &lt;a href="https://twitter.com/Twitter/status/1227039932805517313"&gt;&lt;/a&gt;
+                        &lt;/blockquote&gt;
+                      </code>
+                    </pre>
+                  </div>
+                </div>
+                <!-- End Tab Content -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- Contact Us -->
+  <div class="position-fixed bottom-0 right-0 bg-white p-3 m-1">
+    <a class="btn btn-sm btn-outline-primary transition-3d-hover" target="_blank" href="https://themeforest.net/user/madrasthemes/portfolio">
+      <span class="media align-items-center">
+        <span class="far fa-envelope mr-2"></span>
+        <span class="media-body">
+          Contact Us
+        </span>
+      </span>
+    </a>
+  </div>
+  <!-- End Contact Us -->
+
+  <!-- JS Global Compulsory -->
+  <script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../../documentation/assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+  <script src="../../documentation/assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="../../documentation/assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+  <script src="../../documentation/assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+  <script src="../../documentation/assets/vendor/prism/prism.js"></script>
+
+  <!-- JS MyTravel -->
+  <script src="../../assets/js/hs.core.js"></script>
+  <script src="../../assets/js/components/hs.header.js"></script>
+  <script src="../../assets/js/components/hs.go-to.js"></script>
+  <script src="../../assets/js/components/hs.malihu-scrollbar.js"></script>
+  <script src="../../assets/js/components/hs.scroll-nav.js"></script>
+  <script src="../../documentation/assets/js/components/hs.autocomplete-local-search.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#header'));
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+
+      // initialization of malihu scrollbar
+      var $scrollbar = $('.js-scrollbar');
+      $.HSCore.components.HSMalihuScrollBar.init($scrollbar);
+      $($scrollbar).mCustomScrollbar('scrollTo', '.js-scrollbar .hs-sidebar__link.active');
+    });
+
+    $(window).on('load', function () {
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991.98,
+        hideTimeOut: 0
+      });
+
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('.js-hs-docs-search');
+
+      // initialization of HSScrollNav component
+      var offsetTop = $('#logoAndNav').outerHeight();
+
+      $.HSCore.components.HSScrollNav.init($('.js-scroll-nav'), {
+        duration: 400,
+        customOffsetTop: 0
+      });
+    });
+  </script>
+</body>
+</html>

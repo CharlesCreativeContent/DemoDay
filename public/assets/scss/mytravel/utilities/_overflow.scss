@@ -1,0 +1,9 @@
+/*------------------------------------
+  Overflow
+------------------------------------*/
+@include media-breakpoint-up(lg) {
+
+	.overflow-lg-visible {
+		overflow: visible !important;
+	}
+}

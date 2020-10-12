@@ -1,0 +1,36 @@
+<%- include('header'); -%>
+  <div class="container">
+
+      <div class="page-header text-center">
+          <h1><span class="fa fa-globe"></span> <%= user.local.email.split('@')[0]%></h1>
+          <a href="/feed" class="btn btn-default btn-sm">Global</a>
+          <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+      </div>
+
+      <div class="row">
+
+          <!-- LOCAL INFORMATION -->
+
+          <div class="col-sm-6">
+
+          <h2>Plan a new vacation</h2>
+          <!-- IMAGE UPLOAD -->
+            <input type="text" name="name" placeholder="Name Vacation" value="">
+            <input type="text" name="location" placeholder="Location of Vacation" value="">
+            <input type="submit" value="+ New Trip">
+
+
+              <ul>
+              <% for(var i=0; i<vacations.length; i++) {%>
+                <li>
+                  <span class="vacation"><%= vacations[i].name %></span>
+                  <span> in <%= vacations[i].localName %></span>
+                  <a href="/vacation/<%= vacations[i]._id %>"><button>Visit Vacation</button></a>
+                </li>
+              <% } %>
+              </ul>
+
+         </div>
+       </div>
+  </div>
+<%- include('footer'); -%>

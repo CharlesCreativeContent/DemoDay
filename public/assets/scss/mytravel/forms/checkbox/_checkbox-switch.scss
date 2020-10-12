@@ -1,0 +1,86 @@
+/*------------------------------------
+  Checkbox Switch
+------------------------------------*/
+
+.custom-switch {
+  padding-left: $custom-switch-width + $custom-control-gutter + .25rem;
+
+  .custom-control-label {
+    &::before {
+      left: -($custom-switch-width + $custom-control-gutter + .25rem);
+      height: $custom-switch-height;
+      border: none;
+      background-color: $custom-switch-bg;
+      @include border-radius($custom-switch-border-radius);
+    }
+
+    &::after {
+      top: calc(#{($custom-switch-height / 2) - .5514rem});
+      left: calc(#{-($custom-switch-width + $custom-control-gutter) + .08rem});
+      background-color: $custom-switch-indicator-bg-color;
+    }
+  }
+
+  .custom-control-input:checked ~ .custom-control-label {
+    &::after {
+      transform: translateX($custom-switch-width - $custom-control-indicator-size - .5rem);
+    }
+  }
+}
+
+.switch-custom {
+  .custom-control-input:checked ~ .custom-control-label {
+    &::after {
+      transform: translateX(.9rem) !important;
+    }
+  }
+
+  .custom-control-input:checked ~ .custom-control-label {
+    &::before {
+      background-color: $gray-24 !important;
+    }
+  }
+}
+
+.map-collapse.show + .map-collapse-hidden {
+    display: none;
+}
+
+.map-lable-list {
+    .map-show {
+        display: none;
+    }
+}
+
+.map-lable[aria-expanded="true"] + .map-lable-list {
+    .map-hide {
+        display: none;
+    }
+
+    .map-show {
+        display: inline;
+    }
+}
+
+.map-switch {
+    &.custom-switch {
+        padding-left: 64px;
+
+        .custom-control-label::before {
+            left: 0;
+        }
+
+        .custom-control-label::after {
+            left: 5px;
+        }
+    }
+
+    .custom-control-label {
+        position: static;
+    }
+
+    .custom-control-input:checked ~ .custom-control-label::before {
+        border-color: $gray-24;
+        background-color: $gray-24;
+    }
+}

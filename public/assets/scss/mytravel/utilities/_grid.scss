@@ -1,0 +1,210 @@
+/*------------------------------------
+ Grid
+------------------------------------*/
+
+[class*="gdot"] {
+    @include make-col-ready;
+}
+
+@each $size, $value in $grid-breakpoints {
+
+    .col-#{$size}-2dot2 {
+       @include media-breakpoint-up($size) {
+            @include make-col(2.2);
+       }
+    }
+
+    .col-#{$size}-2dot3 {
+       @include media-breakpoint-up($size) {
+            @include make-col(2.3);
+       }
+    }
+
+    .col-#{$size}-2dot4 {
+       @include media-breakpoint-up($size) {
+            @include make-col(2.4);
+       }
+    }
+
+    .col-#{$size}-2gdot8 {
+       @include media-breakpoint-up($size) {
+            @include make-col(2.84);
+       }
+    }
+
+    .col-#{$size}-3dot64 {
+       @include media-breakpoint-up($size) {
+            @include make-col(3.643);
+       }
+    }
+
+    .col-#{$size}-3dot7 {
+       @include media-breakpoint-up($size) {
+            @include make-col(3.7);
+       }
+    }
+    .col-#{$size}-3dot2 {
+       @include media-breakpoint-up($size) {
+            @include make-col(3.1);
+       }
+    }
+
+    .col-#{$size}-3dot1 {
+       @include media-breakpoint-up($size) {
+            @include make-col(3.1);
+       }
+    }
+
+    .col-#{$size}-3dot6 {
+       @include media-breakpoint-up($size) {
+            @include make-col(3.6);
+       }
+    }
+
+    .col-#{$size}-2dot8 {
+       @include media-breakpoint-up($size) {
+            @include make-col(2.8);
+       }
+    }
+
+    .col-#{$size}-2dot6 {
+       @include media-breakpoint-up($size) {
+            @include make-col(2.6);
+       }
+    }
+
+    .col-#{$size}-2dot5 {
+       @include media-breakpoint-up($size) {
+            @include make-col(2.5);
+       }
+    }
+
+    .col-#{$size}-2dot7 {
+       @include media-breakpoint-up($size) {
+            @include make-col(2.7);
+       }
+    }
+
+    .col-#{$size}-1dot6 {
+       @include media-breakpoint-up($size) {
+            @include make-col(1.6);
+       }
+    }
+
+    .col-#{$size}-1dot8 {
+       @include media-breakpoint-up($size) {
+            @include make-col(1.8);
+       }
+    }
+    .col-#{$size}-8dot4 {
+       @include media-breakpoint-up($size) {
+            @include make-col(8.4);
+       }
+    }
+
+    .col-#{$size}-8dot1 {
+       @include media-breakpoint-up($size) {
+            @include make-col(8.1);
+       }
+    }
+
+    .col-#{$size}-8dot2 {
+       @include media-breakpoint-up($size) {
+            @include make-col(8.2);
+       }
+    }
+
+    .col-#{$size}-3dot5 {
+       @include media-breakpoint-up($size) {
+            @include make-col(3.5);
+       }
+    }
+
+    .col-#{$size}-3gdot5 {
+       @include media-breakpoint-up($size) {
+            @include make-col(3.5);
+       }
+    }
+
+    .col-#{$size}-6dot5 {
+       @include media-breakpoint-up($size) {
+            @include make-col(6.5);
+       }
+    }
+    .col-#{$size}-5dot4 {
+     @include media-breakpoint-up($size) {
+            @include make-col(5.4);
+      }
+    }
+    .col-#{$size}-7dot5 {
+       @include media-breakpoint-up($size) {
+            @include make-col(7.5);
+       }
+    }
+
+    .col-#{$size}-4dot5 {
+       @include media-breakpoint-up($size) {
+            @include make-col(4.5);
+       }
+    }
+
+    .col-#{$size}-4gdot5 {
+       @include media-breakpoint-up($size) {
+            @include make-col(4.5);
+       }
+    }
+
+    .col-#{$size}-8dot3 {
+       @include media-breakpoint-only(xl) {
+            @include make-col(8.3);
+       }
+    }
+    .col-#{$size}-9dot2 {
+       @include media-breakpoint-up($size) {
+            @include make-col(9.2);
+       }
+    }
+
+    .col-#{$size}-8dot5 {
+       @include media-breakpoint-up($size) {
+           @include make-col(8.5);
+       }
+    }
+
+    .col-#{$size}-8gdot5 {
+       @include media-breakpoint-up($size) {
+           @include make-col(8.5);
+       }
+    }
+
+    .col-#{$size}-4dot1 {
+       @include media-breakpoint-up($size) {
+            @include make-col(4.1);
+       }
+    }
+
+    .col-#{$size}-7dot9 {
+       @include media-breakpoint-up($size) {
+            @include make-col(7.9);
+       }
+    }
+
+    .col-#{$size}-5dot5 {
+       @include media-breakpoint-up($size) {
+            @include make-col(5.5);
+       }
+    }
+
+    .col-#{$size}-9dot5 {
+       @include media-breakpoint-up($size) {
+            @include make-col(9.5);
+       }
+    }
+}
+
+.container-fluid {
+    @include media-breakpoint-up(xl) {
+        padding-left: $container-fluid-padding;
+        padding-right: $container-fluid-padding;
+    }
+}
