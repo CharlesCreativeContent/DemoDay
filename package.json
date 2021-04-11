@@ -10,10 +10,10 @@
     "author": "Shawn Charles",
     "license": "ISC",
     "dependencies": {
-        "bcryptjs": "latest",
+        "bcryptjs": "^2.4.3",
         "bson": "^4.0.2",
         "connect-flash": "~0.1.1",
-        "connect-mongo": "latest",
+        "connect-mongo": "4.4.1",
         "cookie-parser": "^1.4.4",
         "ejs": "^2.5.9",
         "express": "^4.17.1",
@@ -26,8 +26,7 @@
         "passport": "~0.3.2",
         "passport-facebook": "~2.1.1",
         "passport-google-oauth": "~1.0.0",
-        "passport-local": "~1.0.0",
-        "passport-twitter": "~1.0.4"
+        "passport-local": "~1.0.0"
     },
     "engines": {
         "node": "^14.x",
