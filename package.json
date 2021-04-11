@@ -13,6 +13,7 @@
         "bcryptjs": "latest",
         "bson": "^4.0.2",
         "connect-flash": "~0.1.1",
+        "connect-mongo": "latest",
         "cookie-parser": "^1.4.4",
         "ejs": "^2.5.9",
         "express": "^4.17.1",

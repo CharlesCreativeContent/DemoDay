@@ -1,7 +1,3 @@
-// server.js
-
-//====================== set up =====================//
-//================all the tools we need==============//
 const express  = require('express');
 const app      = express();
 const port     = process.env.PORT || 8080;
@@ -10,10 +6,11 @@ const passport = require('passport');
 const flash    = require('connect-flash');
 const multer = require('multer');
 const ObjectId = require('mongodb').ObjectID
-
+//================all the tools we need==============//
 const morgan       = require('morgan');
 const cookieParser = require('cookie-parser');
 const session      = require('express-session');
+const MongoStore = require('connect-mongo');
 
 const configDB = require('./config/database.js');
 
@@ -40,7 +37,8 @@ require('./config/passport')(passport); // pass passport for configuration
 app.use(session({
     secret: 'new server who this', // session secret
     resave: true,
-    saveUninitialized: true
+    saveUninitialized: true,
+    store: MongoStore.create( { mongoUrl : configDB.url } ),
 }));
 app.use(passport.initialize());
 app.use(passport.session()); // persistent login sessions
