@@ -13,7 +13,6 @@ const ObjectId = require('mongodb').ObjectID
 
 const morgan       = require('morgan');
 const cookieParser = require('cookie-parser');
-const bodyParser   = require('body-parser');
 const session      = require('express-session');
 
 const configDB = require('./config/database.js');
@@ -30,8 +29,8 @@ mongoose.connect(configDB.url, (err, database) => {
 //================set up our express application============//
 app.use(morgan('dev')); // log every request to the console
 app.use(cookieParser()); // read cookies (needed for auth)
-app.use(bodyParser.json()); // get information from html forms
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json()); // get information from html forms
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'))
 
 app.set('view engine', 'ejs'); // set up ejs for templating
@@ -39,7 +38,7 @@ app.set('view engine', 'ejs'); // set up ejs for templating
 // required for passport
 require('./config/passport')(passport); // pass passport for configuration
 app.use(session({
-    secret: 'rcbootcamp2019c', // session secret
+    secret: 'new server who this', // session secret
     resave: true,
     saveUninitialized: true
 }));
