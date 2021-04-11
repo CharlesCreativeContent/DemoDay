@@ -1,5 +1,5 @@
 {
-    "name": "test auth",
+    "name": "testauth",
     "version": "1.0.0",
     "description": "test template",
     "main": "server.js",
@@ -10,12 +10,12 @@
     "author": "Shawn Charles",
     "license": "ISC",
     "dependencies": {
-        "bcrypt-nodejs": "latest",
+        "bcryptjs": "latest",
         "bson": "^4.0.2",
         "connect-flash": "~0.1.1",
         "cookie-parser": "^1.4.4",
         "ejs": "^2.5.9",
-        "express": "^4.17.20",
+        "express": "^4.17.1",
         "express-session": "^1.17.0",
         "method-override": "~2.3.6",
         "mongodb": "^3.3.5",
@@ -27,9 +27,9 @@
         "passport-google-oauth": "~1.0.0",
         "passport-local": "~1.0.0",
         "passport-twitter": "~1.0.4"
-  },
-  "engines": {
-      "node": "^14.x",
-      "npm": "^6.x"
-  }
+    },
+    "engines": {
+        "node": "^14.x",
+        "npm": "^6.x"
+    }
 }
