@@ -50,7 +50,7 @@ const connect = (db) => require('./app/routes.js')(app, passport, db, multer, Ob
 
 
 // launch ======================================================================
-app.listen(port, function(){
+app.listen(port, '0.0.0.0', function(){
   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
 console.log('The magic happens on port ' + port);
